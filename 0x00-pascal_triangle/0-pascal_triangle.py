@@ -2,20 +2,20 @@
 """A script to determine pascal's triangle for anvalue number"""
 
 
-def pascal_triangle(num) :
+def pascal_triangle(num):
     """
-    returns list of lists containing Pascal’s triangle integers of n
+    returns list of lists containing Pascal’s Triangle integers of n
     """
-    triangle = []
+    pasc = []
 
-    if num <= 0 :
-        return triangle
+    if num <= 0:
+        return pasc
 
-    if num == 1 :
-        triangle.append(1)
+    if num == 1:
+        pasc.append([1])
+        return pasc
 
-
-    for row in range(num) :
+    for row in range(num):
         # print("This iteration, row is ", row)
         row_list = []
 
@@ -23,8 +23,8 @@ def pascal_triangle(num) :
             if value in (0, row):
                 row_list.append(1)
             else:
-                row_list.append(triangle[row-1][value-1] + triangle[row-1][value])
+                row_list.append(pasc[row-1][value-1] + pasc[row-1][value])
 
-        triangle.append(row_list)
+        pasc.append(row_list)
 
-    return triangle
+    return pasc
