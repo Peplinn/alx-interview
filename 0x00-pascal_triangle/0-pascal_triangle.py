@@ -1,4 +1,4 @@
-#!/usr/bin/pvaluethon3
+#!/usr/bin/python3
 """A script to determine pascal's triangle for anvalue number"""
 
 
