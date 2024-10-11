@@ -4,9 +4,8 @@
 
 def canUnlockAll(boxes):
     '''Given that the first box is open, and every key
-    opens the door whose number it bears,
-    this checks if all the boxes
-    in the list can be opened by the keys found.
+    opens the door whose number it bears, this checks
+    if all the boxes can be opened by the keys found.
     '''
     opened = [False] * len(boxes)
     opened[0] = True
