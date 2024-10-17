@@ -15,6 +15,9 @@ def minOperations(n):
     clipboard = ""
     operationsPerformed = 0
 
+    if n <= len(printedH):
+        return operationsPerformed
+
     while len(printedH) <= n:
         if n % 2 and operationsPerformed == 2:
             printedH += "H"
