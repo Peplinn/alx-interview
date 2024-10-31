@@ -14,6 +14,7 @@ only need to handle the 8 least significant bits of each
 integer
 """
 
+
 def validUTF8(data):
     """_summary_
 
