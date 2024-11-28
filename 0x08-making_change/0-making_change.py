@@ -26,4 +26,7 @@ def makeChange(coins, total):
                 amount_left = amount_left - (divisions * coin)
                 operation_count += divisions
 
+    if amount_left > 0:
+        return -1
+
     return operation_count
