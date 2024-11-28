@@ -10,6 +10,9 @@ def makeChange(coins, total):
                     coins (_type_): _description_
                     total (_type_): _description_
     """
+    if total <= 0:
+        return 0
+
     sorted_coins = sorted(coins, reverse=True)
     operation_count = 0
     amount_left = total
