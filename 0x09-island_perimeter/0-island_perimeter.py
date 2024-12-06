@@ -13,12 +13,17 @@ def island_perimeter(grid):
     i = 0
     j = 0
 
+    if len(grid) > 100 or len(grid[0]) > 100:
+        return 0
+
     while i < len(grid) and j < len(grid[0]):
         for row in grid:
             # print(row)
             j = 0
             for cell in row:
                 # print(cell)
+                if cell != 0 and cell != 1:
+                    return 0
                 if cell == 1:
                     if row[j-1] != 0:
                         perimeter -= 2
