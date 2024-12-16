@@ -3,6 +3,7 @@
 Prime Game: Determines the winner after multiple rounds.
 """
 
+
 def isWinner(x, nums):
     """
     Determines the overall winner of the Prime Game.
